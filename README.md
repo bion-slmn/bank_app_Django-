@@ -6,11 +6,11 @@ Example of how to create account, deposit, view transaction history
 ## CREATE AN ACCOUNT with balance, the balanace is optional
 curl -X POST http://127.0.0.1:8000/myapp/account/ -d 'name=dons' -d 'balance=3000'
 
-This return and id of the user 
+This return and id of the account created 
 
 #account_id":"270e39d5-b5d9-4731-8a42-740b37ae65a3"
 
-## DEOPIST
+## DEP0SIT INTO THE ACCOUNT
  curl -X POST http://127.0.0.1:8000/myapp/deposit/ -d "account_id=270e39d5-b5d9-4731-8a42-740b37ae65a3" -d 'deposit=35507.5'
 
 ## WITHDRAWWING FROM THE ACCOUNT
